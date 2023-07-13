@@ -10,4 +10,4 @@ RUN deno cache deps.js
 
 COPY . .
 
-CMD [ "run", "--allow-env", "--allow-net", "--allow-read", "--watch", "--unstable", "app.js" ]
+CMD [ "deno", "run", "--allow-env", "--allow-net", "--allow-read", "--watch", "--unstable", "app.js" ]
