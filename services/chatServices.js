@@ -8,7 +8,7 @@ const fiveMessages = async () => {
 }
 
 const create = async (sender, message) => {
-    await sql`INSERT INTO messages (sender, message) VALUES (${sender}, message ${message})`;
+    await sql`INSERT INTO messages (sender, message) VALUES (${sender}, ${message})`;
 }
 
 export {fiveMessages, create}
