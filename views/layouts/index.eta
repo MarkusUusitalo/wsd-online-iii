@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <h1>Title</h1>
 <form method="POST">
     sender: <input type="text" name="sender" /><br/>
@@ -12,3 +14,4 @@
     </li>
  <%}); %>
  </ul>
+ </html>
