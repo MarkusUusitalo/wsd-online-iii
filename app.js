@@ -34,7 +34,9 @@ const addMessage = async (request) => {
 const handleRequest = async (request) => {
   const url = new URL(request.url);
   if (request.method === "GET") {
-    const messages =  await chatServices.fiveMessages();
+    const data = {
+      messages: await chatServices.fiveMessages(),
+    };
     return new Response(await renderFile("index.eta", { messages }), responseDetails);
   }
 
