@@ -37,7 +37,7 @@ const handleRequest = async (request) => {
     const data = {
       messages: await chatServices.fiveMessages(),
     };
-    return new Response(await renderFile("index.eta", { messages }), responseDetails);
+    return new Response(await renderFile("index.eta", data ), responseDetails);
   }
 
   else if (request.method === "POST") {
